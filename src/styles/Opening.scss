@@ -1,0 +1,16 @@
+.Opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.Opening__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Opening__main-logo {
+  margin: 2rem;
+}

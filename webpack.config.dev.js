@@ -7,11 +7,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
+    assetModuleFilename: 'assets/images/[hash][ext][query]',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
   mode: 'development',
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -37,6 +40,24 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jpg|svg)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            mimetype: 'application/font-woff',
+            name: '[name].[ext]',
+            outputPath: './assets/fonts/',
+            publicPath: './assets/fonts',
+            esModule: false,
+          },
+        },
+      },
     ],
   },
   plugins: [
@@ -49,6 +70,7 @@ module.exports = {
     }),
   ],
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080,
