@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MainLogo from '../assets/images/mainLogo.svg';
 import '../styles/Opening.scss';
 
@@ -7,9 +8,9 @@ const Opening = () => {
     <section className='Opening'>
       <div className='Opening__container'>
         <div className='Opening__main-logo'>
-          <a href='/'>
+          <Link to='/'>
             <img src={MainLogo} alt='main Logo' />
-          </a>
+          </Link>
         </div>
         <div className='Opening__slogan'>
           <p>
