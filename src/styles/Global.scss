@@ -7,7 +7,11 @@
 html {
   font-size: 62.5%;
   font-family: $font-500, sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   min-width: 320px;
+}
+a {
+  text-decoration: none;
 }
