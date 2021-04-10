@@ -1,6 +1,8 @@
 import React from 'react';
 import picture from '../assets/images/Imagen1.png';
 import mainLogo from '../assets/images/Ellipse 201.png';
+import HeartIcon from '../styles/Icons/Heart.svg';
+import ChatIcon from '../styles/Icons/Chat.svg';;
 
 const New = () => {
   return (
@@ -24,11 +26,11 @@ const New = () => {
         </div>
         <div className='New__interactions'>
           <div className='love'>
-            <img src='' alt='' />
+            <img src={HeartIcon} alt='love' />
             <p>12K</p>
           </div>
           <div className='comment'>
-            <img src='' alt='' />
+            <img src={ChatIcon} alt='comments' />
             <p>988</p>
           </div>
         </div>
