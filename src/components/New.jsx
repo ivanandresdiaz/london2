@@ -2,7 +2,7 @@ import React from 'react';
 import picture from '../assets/images/Imagen1.png';
 import mainLogo from '../assets/images/Ellipse 201.png';
 import HeartIcon from '../styles/Icons/Heart.svg';
-import ChatIcon from '../styles/Icons/Chat.svg';;
+import ChatIcon from '../styles/Icons/Chat.svg';
 
 const New = () => {
   return (

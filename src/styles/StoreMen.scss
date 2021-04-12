@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.StoreMen {
+  width: 100%;
+  height: auto;
+}
+.StoreMen__header {
+  background: linear-gradient(
+      102.86deg,
+      #000000 20.03%,
+      rgba(255, 255, 255, 0) 86.64%
+    ),
+    linear-gradient(94.14deg, #9a3b3b 49.86%, #47b1de 83.64%, #a3b7c0 92.04%);
+
+  color: $color-white-base;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  .StoreMen__title--london {
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 2.4rem;
+    font-family: $font-700;
+  }
+}
+.StoreMen__title--men-container {
+  display: flex;
+  padding-left: 15px;
+  img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+  .StoreMen__title--men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin-left: 10px;
+      font-size: 2.4rem;
+    }
+    p {
+      margin-left: 10px;
+    }
+  }
+}

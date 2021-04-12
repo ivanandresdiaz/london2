@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLogo from '../assets/images/mainLogo.svg';
 import '../styles/Opening.scss';
-import MobileNav from './MobileNav';
+import MobileNav from '../components/MobileNav';
 
 const Opening = () => {
   return (
