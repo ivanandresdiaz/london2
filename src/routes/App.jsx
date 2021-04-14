@@ -7,7 +7,7 @@ import Home from '../pages/Home';
 import Store from '../pages/Store';
 import StoreMen from '../pages/StoreMen';
 import StoreMenBrandPants from '../pages/StoreMenBrandPants';
-import StoreMenPantOxford from '../pages/StoreMenPantOxfort';
+import OfferPage from '../pages/OfferPage';
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route exact path='/store' component={Store} />
         <Route exact path='/store/hombre' component={StoreMen} />
         <Route exact path='/store/hombre/brandPants' component={StoreMenBrandPants} />
-        <Route exact path='/store/hombre/brandPants/oxford' component={StoreMenPantOxford} />
+        <Route exact path='/store/hombre/brandPants/oxford' component={OfferPage} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
