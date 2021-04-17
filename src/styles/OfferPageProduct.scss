@@ -1,0 +1,68 @@
+@import "./variables.scss";
+.OfferPage__product--container {
+  background-color: $color-white-base;
+  width: 80%;
+  height: auto;
+  scroll-snap-align: center;
+}
+.OfferPage__product--image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.OfferPage__product--description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-size: $font-600;
+    color: $color-vulcan-4;
+    font-size: 17px;
+  }
+  .OfferPage__product--brand {
+    color: $color-gray-3;
+    font: size 11px;
+  }
+  .OfferPage__product--avaliable {
+    color: $color-oliva-4;
+    font-size: 1.4rem;
+  }
+  .OfferPage__product--size {
+    color: $color-gray-3;
+  }
+  .OfferPage__product--price {
+    font-size: 1.5rem;
+    font-family: $font-300;
+  }
+}
+.OfferPage__action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .OfferPage__chat--seller {
+    text-decoration: none;
+    background-color: $color-white-base;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    img {
+      width: 29px;
+      height: 29px;
+    }
+  }
+  .OfferPage__action--purchase {
+    text-decoration: none;
+    background-color: $color-denimblue-blue5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    img {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}

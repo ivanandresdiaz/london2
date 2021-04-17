@@ -36,92 +36,16 @@
     font-size: 1.7rem;
   }
 }
-.OfferPage__counter--container {
-  padding: 15px 10px;
-  width: 100%;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column;
-  .OfferPage__counter {
-    height: 6px;
-    width: 80%;
-    border-radius: 3px;
-    background-color: $color-gris-sg1;
-  }
-  .OfferPage__counter--blue {
-    height: 6px;
-    width: 80%;
-    border-radius: 3px;
-    background-color: $color-denimblue-blue5;
-  }
-}
+
 .OfferPage__producto--main-container {
   display: flex;
   align-items: center;
 }
-.OfferPage__product--container {
-  background-color: $color-white-base;
-  width: 80%;
-  height: auto;
-}
-.OfferPage__product--image {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-.OfferPage__product--description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h3 {
-    font-size: $font-600;
-    color: $color-vulcan-4;
-    font-size: 17px;
-  }
-  .OfferPage__product--brand {
-    color: $color-gray-3;
-    font: size 11px;
-  }
-  .OfferPage__product--avaliable {
-    color: $color-oliva-4;
-    font-size: 1.4rem;
-  }
-  .OfferPage__product--size {
-    color: $color-gray-3;
-  }
-  .OfferPage__product--price {
-    font-size: 1.5rem;
-    font-family: $font-300;
-  }
-}
-.OfferPage__action {
+.OfferPage__container--all-products {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  .OfferPage__chat--seller {
-    text-decoration: none;
-    background-color: $color-white-base;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 60px;
-    img {
-      width: 29px;
-      height: 29px;
-    }
-  }
-  .OfferPage__action--purchase {
-    text-decoration: none;
-    background-color: $color-denimblue-blue5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    img {
-      width: 29px;
-      height: 29px;
-    }
-  }
+  grid-auto-columns: 100vw;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
