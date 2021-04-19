@@ -1,0 +1,19 @@
+@import "./variables.scss";
+.Profile {
+  width: 100%;
+}
+.Profile__title {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  img {
+    height: 35px;
+    width: 35px;
+  }
+  h2 {
+    padding-left: 10px;
+    font-family: $font-600;
+    color: $color-vulcan-2;
+    font-size: 17px;
+  }
+}

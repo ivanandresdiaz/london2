@@ -26,7 +26,7 @@ const MobileNav = () => {
           <p>Chat</p>
         </div>
       </Link>
-      <Link to='/profile'>
+      <Link to='/perfil'>
         <div className='MobileNav__profile'>
           <div className='Mobile__barra Mobile__barra--profile' />
           <span>. </span>

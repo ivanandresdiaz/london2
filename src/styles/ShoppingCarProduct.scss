@@ -1,0 +1,48 @@
+@import "./variables.scss";
+.ShoppingCarProduct {
+  padding: 15px;
+  height: 100px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 35% 50% 15%;
+  .ShoppingCarProduct__image-container {
+    width: 100%;
+    height: 100%;
+    .ShoppingCarProduct__image {
+      max-width: 110px;
+      max-height: 110px;
+      width: 30vw;
+      height: 30vw;
+      border-radius: 25px;
+    }
+  }
+}
+.ShoppingCarProduct__description {
+  padding: 15px;
+  h4 {
+    font-size: 17px;
+    font-family: $font-600;
+    color: $color-base-black;
+  }
+  p {
+    color: $color-vulcan-2;
+    margin: 5px 0;
+  }
+}
+.ShoppingCarProduct__product--action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  img {
+    margin: 0 10px;
+    height: 23px;
+    width: 23px;
+  }
+}
+.ShoppingCarProduct__delete-product {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    height: 21px;
+    width: 21px;
+  }
+}

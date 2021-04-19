@@ -1,0 +1,49 @@
+@import "./variables.scss";
+.ShoppingCart {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-white-base;
+  position: relative;
+}
+.ShoppingCar__header {
+  display: block;
+  height: 100px;
+  img {
+    padding: 15px;
+  }
+  h2 {
+    padding-left: 15px;
+    font-size: 24px;
+    font-family: $font-700;
+  }
+}
+.ShoppingCar__shipment-details {
+  h3 {
+    font-size: 17px;
+    font-family: $font-600;
+    color: $color-vulcan-4;
+    padding-left: 15px;
+  }
+}
+.ShoppingCar__title {
+  padding: 14px;
+  font-size: 19px;
+  color: $color-vulcan-5;
+}
+.ShoppingCar__container-payment {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  top: 80vh;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 90%;
+    height: 100%;
+    background-color: $color-denimblue-blue5;
+    color: $color-white-base;
+    border: none;
+    border-radius: 25px;
+  }
+}
